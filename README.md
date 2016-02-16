@@ -5,18 +5,25 @@
 #测试环境
 ##硬件：
 CPU: Intel(R) Xeon(R) CPU E5-2640 v2 @ 2.00GHz
+
 Memory:64G
-Disk: Intel DC S3500 SSD 6*300G
+
+Disk: Intel DC S3500 SSD 6*300G 
+
 Net: 1G*2 Bound
 
 ##软件
 Hadoop 2.7.2 
+
 HBase 1.1.3
+
 JDK 1.7.0_79
 
 ##测试环境设置
 3台 Server HDFS，挂载5块SSD硬盘
-HDFS:
+
+hdfs-site.xml部分配置
+
   <property>
     <name>dfs.replication</name>
     <value>3</value>
@@ -40,4 +47,5 @@ HDFS:
   </property>
   
  1台Region Server
+ 
  1台 YCSB 测试Client
