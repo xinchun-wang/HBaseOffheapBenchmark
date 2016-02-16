@@ -28,23 +28,28 @@ hdfs-site.xml部分配置
     <name>dfs.replication</name>
     <value>3</value>
   </property>
+  
   <property>
     <name>dfs.blocksize</name>
     <value>134742016</value>
   </property>
+  
   <property>
     <name>dfs.datanode.max.transfer.threads</name>
     <value>2048</value>
   </property>
+  
   <property>
     <name>dfs.datanode.handler.count</name>
     <value>16</value>
   </property>
+  
    <property>
     <name>dfs.datanode.data.dir</name>
     <value>/data01/dfs/data,/data02/dfs/data,/data03/dfs/data,/data04/dfs/data,/data05/dfs/data</value>
     <final>true</final>
   </property>
+  
   
  1台Region Server
  
